@@ -1,0 +1,78 @@
+/* Reset básico y estilos globales */
+* {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem; /* Asegura espacio en pantallas pequeñas */
+}
+
+/* Contenedor principal responsivo */
+.contenedor {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Se adapta bien entre 320px y 1440px */
+    text-align: center;
+}
+
+/* Imagen dentro del diseño */
+.tamano_imagen {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Imagen específica de 32x32 si se desea ícono */
+.icono {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Título */
+.titulo {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+/* Descripción */
+.attribution {
+    color: hsl(216, 15%, 48%);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES para mejorar experiencia en pantallas grandes */
+@media (min-width: 768px) {
+    .contenedor {
+        padding: 3rem;
+    }
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .attribution {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 600px;
+    }
+}
