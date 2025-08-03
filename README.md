@@ -22,7 +22,7 @@ El proyecto consiste en un componente de tarjeta que muestra un código QR con u
 ## Vista previa
 
 ![Captura del proyecto con 1440px](./images/capt_1440px.png)
-![Captura del proyecto con 375px](./images/capt_375.png)
+![Captura del proyecto con 375px](./images/capt_375px.png)
 
 ## Cómo usar
 
